@@ -17,7 +17,7 @@ saving target.
 1. Add function to transfer money back from saving account to current balance.
 2. Set source of incomes and expenses as the select elements with the categories of your choice.
 3. Add edit/delete button and according functions for incomes and expenses.
-4. Use `d3` package to print out 2 piecharts for incomes and expenses in categories.
+4. Use `d3` package to print out 2 piecmesharts for inco and expenses in categories.
 
 ## References
 
