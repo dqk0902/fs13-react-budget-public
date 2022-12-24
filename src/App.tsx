@@ -4,6 +4,7 @@ import Money from "./components/Money";
 import Saving from "./components/Saving";
 import { useState } from "react";
 import { MoneyType } from "./interface/money";
+import "./App.css";
 const App = () => {
   const [income, setIncome] = useState<MoneyType[]>([]);
   const [expense, setExpense] = useState<MoneyType[]>([]);
@@ -22,21 +23,30 @@ const App = () => {
     setBalance(totalIncome - totalExpense - saving);
   });
   return (
-    <div>
-      <Money
-        option="Income"
-        list={income}
-        setList={setIncome}
-        balance={balance}
-      />
-      <Money
-        option="Expense"
-        list={expense}
-        setList={setExpense}
-        balance={balance}
-      />
-      <Balance balance={balance} setSaving={setSaving} />
-      <Saving saving={saving} />
+    <div className="flex">
+      <div className="flex-1">
+        {" "}
+        <Money
+          option="Income"
+          list={income}
+          setList={setIncome}
+          balance={balance}
+        />
+      </div>
+      <div className="flex-2">
+        <Money
+          option="Expense"
+          list={expense}
+          setList={setExpense}
+          balance={balance}
+        />
+      </div>
+      <div className="flex-3">
+        <Saving saving={saving} />
+      </div>
+      <div className="flex-4">
+        <Balance balance={balance} setSaving={setSaving} />
+      </div>
     </div>
   );
 };

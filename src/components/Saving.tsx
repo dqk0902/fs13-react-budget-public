@@ -6,9 +6,9 @@ function Saving({ saving }: SavingProps) {
   const [target, setTarget] = useState(0);
   return (
     <div>
-      <p>Current saving:{saving}</p>
-      <p>Current target: {target}</p>
       <form action="">
+        <p>Current saving:{saving}</p>
+        <p>Current target: {target}</p>
         <label htmlFor="target">Reset target</label>
         <input
           type="number"
