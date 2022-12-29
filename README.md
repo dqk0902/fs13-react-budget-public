@@ -6,6 +6,20 @@ This assignment requires also TypeScript when passing props to React Components
 
 ## References
 
-Be creative with your style!
+└───src
+    │   App.css
+    │   index.css
+    │   index.tsx
+    |   App.tsx
+    |
+    ├───components
+    │      Balance.tsx
+    |      Money.tsx      
+    |      Saving.tsx
+    │
+    ├───interface
+    │       balance.ts
+    │       money.ts
+    │       saving.ts
 
 This is the link to the website https://react-budget-dqk.netlify.app/
